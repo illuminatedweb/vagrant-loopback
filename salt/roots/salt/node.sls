@@ -27,8 +27,17 @@ nodejsppa:
 
 globalnpm:
   cmd.run:
-    - name: "npm install --global gulp && npm install --global strongloop"
+    - name: "npm install -g strongloop && npm install -g gulp && npm install -g bower"
     - require:
+      - pkg: nodejs
+      - pkg: git
+
+bowerinstall:
+  cmd.run:
+    - name: "bower install --allow-root --no"
+    - cwd: /vagrant/app
+    - require:
+      - cmd: globalnpm
       - pkg: nodejs
       - pkg: git
 
@@ -40,4 +49,3 @@ npminstall:
       - cmd: globalnpm
       - pkg: nodejs
       - pkg: git
-      - pkg: mysql-server

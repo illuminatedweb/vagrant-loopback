@@ -1,0 +1,23 @@
+{
+  "name": "vagrant-loopback",
+  "version": "0.0.0",
+  "description": "Development environment with [Vagrant](http://www.vagrantup.com/) and provisioned by [SaltStack](http://saltstack.com/)",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.8.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/illuminatedweb/vagrant-loopback.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/illuminatedweb/vagrant-loopback/issues"
+  },
+  "homepage": "https://github.com/illuminatedweb/vagrant-loopback"
+}
