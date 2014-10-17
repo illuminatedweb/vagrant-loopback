@@ -35,7 +35,7 @@ globalnpm:
 bowerinstall:
   cmd.run:
     - name: "bower install --allow-root --no"
-    - cwd: /vagrant/app
+    - cwd: /vagrant
     - require:
       - cmd: globalnpm
       - pkg: nodejs
